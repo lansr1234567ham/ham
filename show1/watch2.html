@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>مشاهدة الفيلم</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            margin: 0;
+            font-family: 'Cascadia Mono', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .video-container {
+            width: 90%;
+            max-width: 900px;
+            border: 5px solid #e5e216;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #ec0808;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="video-title">جاري التحميل...</h1>
+
+    <div class="video-container">
+        <video controls autoplay id="video-player">
+      <source id="" src="video1/02.Mp4.mp4" type="video/mp4">
+      المتصفح لا يدعم تشغيل الفيديو.
+    </video>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoFile = urlParams.get('video');
+        const title = urlParams.get('title');
+
+        if (videoFile && title) {
+            document.getElementById('video-title').textContent = title;
+            document.getElementById('video-source').src = 'videos/' + videoFile;
+            document.getElementById('video-player').load();
+        } else {
+            document.getElementById('video-title').textContent = 'HaM شاهد سيما';
+        }
+    </script>
+
+</body>
+
+</html>

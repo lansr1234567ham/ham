@@ -1,0 +1,488 @@
+                                    * {
+                                        font-family: "Cascadia Mono", sans-serif;
+                                        font-optical-sizing: auto;
+                                        font-weight: weight;
+                                        font-style: normal;
+                                        margin: 0;
+                                        padding: 0;
+                                        scroll-behavior: smooth;
+                                    }
+                                    
+                                    #content {
+                                        padding: 0%;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url(img5/banner_bg01.jpg);
+                                        background-repeat: no-repeat;
+                                        background-position: top right;
+                                    }
+                                    
+                                    #navbar {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    
+                                    #navbar #nav-left {
+                                        margin-left: 20px;
+                                    }
+                                    
+                                    #navbar #nav-left a {
+                                        text-decoration: none;
+                                        font-size: 30px;
+                                        color: rgb(235, 11, 11);
+                                        font-weight: 700;
+                                    }
+                                    
+                                    #navbar #nav-left a:hover {
+                                        color: #fff;
+                                    }
+                                    
+                                    #navbar #nav-center a {
+                                        margin-left: 20px;
+                                        color: rgb(21, 17, 233);
+                                        font-size: 20px;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    #navbar #nav-center a:hover {
+                                        color: #fff;
+                                    }
+                                    
+                                    #nav-right {
+                                        margin-right: 40px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    #nav-raigt span {
+                                        color: #fff;
+                                        margin-right: 12px;
+                                        cursor: pointer;
+                                        font-size: 33px;
+                                    }
+                                    
+                                    #navbar #nav-raigt span:hover {
+                                        color: #e5e216c2;
+                                    }
+                                    
+                                    #navbar #nav-raigt select {
+                                        font-size: 17px;
+                                        cursor: pointer;
+                                        background: none;
+                                        margin-right: 12px;
+                                        color: #fff;
+                                    }
+                                    
+                                    #navbar #nav-raigt select:hover {
+                                        color: #fff;
+                                    }
+                                    
+                                    #nav-raigt button {
+                                        color: #fff;
+                                        cursor: pointer;
+                                        background: none;
+                                        border: none;
+                                        font-size: 16px;
+                                        padding: 8px;
+                                        border-radius: 35px;
+                                        border: solid #e5e216c2 2px;
+                                        width: 160px;
+                                        height: 45px;
+                                        font-weight: 700;
+                                    }
+                                    
+                                    #navbar #nav-raigt button:hover {
+                                        color: #fff;
+                                        background: #e5e216;
+                                    }
+                                    
+                                    #center {
+                                        padding: 230px 30px;
+                                    }
+                                    
+                                    #center:hover {
+                                        cursor: pointer;
+                                    }
+                                    
+                                    #center h2 {
+                                        color: red;
+                                        font-size: 37px;
+                                        font-weight: 700;
+                                    }
+                                    
+                                    #center h2:hover {
+                                        color: #fff;
+                                    }
+                                    
+                                    #center h1 {
+                                        color: #fff;
+                                        font-size: 29px;
+                                        font-weight: 500;
+                                    }
+                                    
+                                    #center h1 span {
+                                        color: red;
+                                        font-weight: 600;
+                                        font-size: 35px;
+                                    }
+                                    
+                                    #center h1 span:hover {
+                                        color: #fff;
+                                    }
+                                    
+                                    #div-p p {
+                                        background-color: #fff;
+                                        display: inline-block;
+                                        font-size: 10px;
+                                        padding: 7px 11px;
+                                        font-weight: 800;
+                                    }
+                                    
+                                    #center button {
+                                        color: #fff;
+                                        cursor: pointer;
+                                        background: none;
+                                        border: none;
+                                        font-size: 16px;
+                                        padding: 8px;
+                                        border-radius: 35px;
+                                        border: solid #e5e216c2 2px;
+                                        width: 105px;
+                                        height: 45px;
+                                        font-weight: 800;
+                                    }
+                                    
+                                    #center button:hover {
+                                        background-color: #e5e216;
+                                        color: #fff;
+                                    }
+                                    
+                                    #main-poster {
+                                        padding: 0%;
+                                        width: 100%;
+                                        height: 100%;
+                                        flex-wrap: nowrap;
+                                        background-image: url(img5/pg/services_bg.jpg);
+                                        background-repeat: no-repeat;
+                                        background-position: top right;
+                                    }
+                                    
+                                    #title {
+                                        height: 100%;
+                                        width: 100%;
+                                        padding: 0%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin-right: 20px;
+                                        align-items: center;
+                                    }
+                                    
+                                    #title-left p {
+                                        color: #fff;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        margin-top: 30px;
+                                        margin-left: 50px;
+                                    }
+                                    
+                                    #title-left h1 {
+                                        font-size: 40px;
+                                        font-weight: 800;
+                                        color: #ee0b0b;
+                                        margin-top: 30px;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    #title-r a {
+                                        margin: 5px;
+                                        background: none;
+                                        border: none;
+                                        outline: none;
+                                        max-width: 190px;
+                                        padding: 10px 20px;
+                                        font-size: 16px;
+                                        border-radius: 9999px;
+                                        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+                                        color: #fff;
+                                        text-decoration: none;
+                                        font-weight: 500;
+                                        transition: 0.5;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    
+                                    #title-r a:hover {
+                                        background-color: #c5c5b9;
+                                    }
+                                    
+                                    #card {
+                                        width: 300px;
+                                        height: 450px;
+                                        padding: 0%;
+                                        margin-top: 20px;
+                                        margin-left: 30px;
+                                        position: relative;
+                                        overflow: hidden;
+                                        border-radius: 15px;
+                                        display: inline-flex;
+                                    }
+                                    
+                                    #poster {
+                                        top: 0;
+                                        left: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: relative;
+                                    }
+                                    
+                                    #poster img {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 14px;
+                                        transition: 0.5s;
+                                    }
+                                    
+                                    #data-list {
+                                        position: absolute;
+                                        bottom: -100%;
+                                        width: 100%;
+                                        height: 50%;
+                                        padding: 1.5em 1.5em 2em;
+                                        backdrop-filter: blur(16px);
+                                        background-color: #0000009c;
+                                        transition: 0.5s;
+                                        direction: rtl;
+                                        right: 0;
+                                    }
+                                    
+                                    #card:hover #data-list {
+                                        bottom: 0;
+                                    }
+                                    
+                                    #data-list h1 {
+                                        color: #ec0808;
+                                        font-size: 27px;
+                                        font-weight: 800;
+                                    }
+                                    
+                                    #data-list p {
+                                        color: #fff;
+                                        font-size: 20px;
+                                    }
+                                    
+                                    #div-star {
+                                        display: inline-block;
+                                    }
+                                    
+                                    #div-star input {
+                                        display: none;
+                                    }
+                                    
+                                    #div-star label {
+                                        cursor: pointer;
+                                        color: #fff;
+                                        transition: 0.3s;
+                                    }
+                                    
+                                    #div-star label::before {
+                                        content: '\2655';
+                                        font-size: 20px;
+                                    }
+                                    
+                                    #div-star input:checked ¬ label,
+                                    #div-star label:hover,
+                                    #div-star label:hover ¬ label {
+                                        color: #ec0808;
+                                        transition: 0.3s;
+                                    }
+                                    
+                                    .button-star {
+                                        display: flex;
+                                        align-items: center;
+                                        color: #fff;
+                                        cursor: pointer;
+                                        background: none;
+                                        border: none;
+                                        font-size: 12px;
+                                        padding: 9px;
+                                        border-radius: 35px;
+                                        border: solid #e5e216c2 2px;
+                                        width: 175px;
+                                        height: 35px;
+                                        font-weight: 800;
+                                        direction: ltr;
+                                    }
+                                    
+                                    .button-star::before {
+                                        content: '\2661';
+                                        font-size: 25px;
+                                    }
+                                    
+                                    .button-star:hover {
+                                        background-color: #e5e216;
+                                        transition: 0.2s
+                                    }
+                                    
+                                    #live {
+                                        padding: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        justify-content: space-between;
+                                        display: flex;
+                                        align-items: center;
+                                        background-image: url(img5/pg/live_bg.jpg);
+                                        background-repeat: no-repeat;
+                                        background-position: top;
+                                    }
+                                    
+                                    #live-left {
+                                        padding: 10px;
+                                        margin-left: 25px;
+                                    }
+                                    
+                                    #live #live-left .p1 {
+                                        color: #e5e216;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    #live #live-left h1 {
+                                        font-size: 25px;
+                                        color: #333;
+                                        font-weight: 800;
+                                    }
+                                    
+                                    #live #live-left h1 span {
+                                        color: #ff7700;
+                                        font-weight: 800;
+                                        font-size: 30px;
+                                    }
+                                    
+                                    #live #live-left .p2 {
+                                        color: #000;
+                                        font-size: 16px;
+                                    }
+                                    
+                                    #live #live-left button {
+                                        color: #000;
+                                        cursor: pointer;
+                                        background: ;
+                                        border: none;
+                                        font-size: 16px;
+                                        padding: 8px;
+                                        border-radius: 35px;
+                                        border: solid #e5e216c2 2px;
+                                        width: 105px;
+                                        height: 45px;
+                                        font-weight: 800;
+                                    }
+                                    
+                                    #live #live-left button:hover {
+                                        color: #fff;
+                                        background-color: #e5e216;
+                                    }
+                                    
+                                    .title-2 {
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .title-2 p {
+                                        color: #fff;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        margin-top: 30px;
+                                        margin-left: 55px;
+                                    }
+                                    
+                                    .title-2 h1 {
+                                        font-size: 40px;
+                                        font-weight: 800;
+                                        color: #ee0b0b;
+                                        margin-top: 30px;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    #info {
+                                        padding: 0%;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        background-image: url(img5/pg/footer_bg.jpg);
+                                        background-repeat: no-repeat;
+                                        background-position: top;
+                                        padding-top: 25px;
+                                        padding-bottom: 50px;
+                                    }
+                                    
+                                    #info .logo a {
+                                        text-decoration: none;
+                                        font-size: 30px;
+                                        color: rgb(235, 11, 11);
+                                        font-weight: 700;
+                                    }
+                                    
+                                    #info .logo-r a {
+                                        margin: 5px;
+                                        background: none;
+                                        border: none;
+                                        outline: none;
+                                        max-width: 190px;
+                                        padding: 10px 20px;
+                                        font-size: 16px;
+                                        border-radius: 9999px;
+                                        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+                                        color: #fff;
+                                        text-decoration: none;
+                                        font-weight: 500;
+                                        transition: 0.5;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    
+                                    #info .logo-r a:hover {
+                                        background-color: #c5c5b9;
+                                        color: #fff;
+                                    }
+                                    
+                                    #info .logo-r .input1 {
+                                        margin: 15px;
+                                        background: none;
+                                        border: none;
+                                        outline: none;
+                                        max-width: 190px;
+                                        padding: 10px 20px;
+                                        font-size: 16px;
+                                        border-radius: 9999px;
+                                        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+                                        color: #fff;
+                                    }
+                                    
+                                    .footer {
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-image: url(img5/pg/footer_bg.jpg);
+                                        background-repeat: no-repeat;
+                                        background-position: top;
+                                        padding-bottom: 20px;
+                                    }
+                                    
+                                    .footer p {
+                                        color: #fff;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }

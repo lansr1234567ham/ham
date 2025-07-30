@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>مشاهدة الفيلم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- مشغل الفيديو Plyr -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+            color: white;
+        }
+        
+        header {
+            background: #111;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px #000;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        
+        .video-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        video {
+            width: 100%;
+            border-radius: 12px;
+        }
+        
+        .details {
+            margin-top: 20px;
+        }
+        
+        .details h2 {
+            margin-bottom: 10px;
+        }
+        
+        .details p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+        
+        .plyr__control--overlaid {
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HaM سينما</h1>
+    </header>
+
+    <div class="video-container">
+        <video id="player" controls crossorigin playsinline data-poster="poster.jpg">
+    <source src="video2/03.mp4" type="video/mp4" data-quality="720">
+    <source src="video2/033.mp4" type="video/mp4" data-quality="480">
+    <track kind="subtitles" label="عربي" srclang="ar" src="subs/film_ar.vtt" default>
+    <track kind="subtitles" label="English" srclang="en" src="subs/film_en.vtt">
+</video>
+
+        <div class="details">
+            <h2>شمس الزناتي</h2>
+            <p>شاهد الفيلم بجودة عالية مع ترجمة تلقائية وإمكانيات متقدمة مثل تقديم وتأخير الفيديو 10 ثوانٍ.</p>
+        </div>
+    </div>
+
+    <!-- مشغل الفيديو Plyr -->
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.polyfilled.min.js"></script>
+
+    <script>
+        const player = new Plyr('#player', {
+            controls: [
+                'play-large', 'play', 'rewind', 'fast-forward', 'progress',
+                'current-time', 'mute', 'volume', 'captions', 'settings',
+                'fullscreen'
+            ],
+            settings: ['captions', 'quality', 'speed'],
+            i18n: {
+                restart: 'إعادة',
+                rewind: 'ترجيع 5 ثوانٍ',
+                play: 'تشغيل',
+                pause: 'إيقاف مؤقت',
+                fastForward: 'تقديم 5 ثوانٍ',
+                settings: 'الإعدادات',
+                captions: 'الترجمة',
+                fullscreen: 'شاشة كاملة',
+                quality: 'الجودة',
+                speed: 'السرعة',
+            }
+        });
+    </script>
+
+</body>
+
+</html>
